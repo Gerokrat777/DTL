@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block title %} HOME - {{block.super}} {% endblock %}
+
+{% block header %}
+    {{ block.super }}
+    <h2> ЭТО 2Я СТРАНГИЧКА</h2>
+{% endblock %}
+
+
+{% block content %}
+    <h2> ДРУГОЙ ПОСТ </h2>
+    <ul>
+        <li>ПОСТ 1</li>
+        <li>ПОСТ 2</li>
+        <li>ПОСТ 3</li>
+    </ul>
+{% endblock %}
+
+{% block footer %}
+    <p>СПАСИБО ЗА ВИЗИТ</p>
+    {{ block.super}}
+{% endblock %}

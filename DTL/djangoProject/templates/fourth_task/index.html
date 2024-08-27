@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}МОЙ САЙТ{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href='{% static "style.css"%}'>
+</head>
+<body>
+    <header>
+        {% block header %}
+        <h1>ДОБРО ПОЖАЛОВАТЬ НА МОЙ САЙТ............</h1>
+        {% endblock %}
+    </header>
+
+    <main>
+        {% block content %}
+            <p> тьут будут посты</p>
+        {% endblock %}
+    </main>
+
+</body>
+</html>
